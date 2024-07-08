@@ -26,7 +26,14 @@
 
 ```gnuplot {cmd=true output="html"}
 set terminal svg
+set xrange [0:7]
+set yrange [-20:15]
+set title "関数のプロット"
+set xlabel "x"
+set ylabel "y"
+set grid
 
+plot (2*x**2)*sqrt(x)-5*x**2 t "f1(x)",x/log(x) t "f2(x)"
 ```
 
 ## 3. 八王子の気温
